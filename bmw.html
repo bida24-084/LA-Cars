@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Models - Las Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning fw-bold fs-3" href="#">Las Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="d-flex flex-column flex-sm-row gap-2">
+          <a href="index.html" class="btn btn-outline-warning">Home</a>
+          <a href="contact.html" class="btn btn-outline-info">Contact Us</a>
+          <a href="signin.html" class="btn btn-outline-primary">Sign In</a>
+          <a href="login.html" class="btn btn-outline-success">Login</a>
+          <a href="feedback.html" class="btn btn-outline-warning">Feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Side Navigation -->
+      <aside class="col-md-2">
+        <div class="side-nav">
+          <a href="honda.html" class="btn btn-outline-light mb-3 w-100">Honda</a>
+      
+          <a href="mercedes.html" class="btn btn-outline-light mb-3 w-100">Mercedes</a>
+
+          <a href="toyota.html" class="btn btn-outline-light mb-3 w-100">Toyota</a>
+          
+          <div class="dropdown brand-dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              BMW
+            </button>
+            <ul class="dropdown-menu bg-dark text-white">
+              <li><a class="dropdown-item text-white" href="#bmw-suv">SUVs</a></li>
+              <li><a class="dropdown-item text-white" href="#bmw-sedan">Sedans</a></li>
+              <li><a class="dropdown-item text-white" href="#bmw-sports">Sports</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="col-md-10">
+        <h2 class="text-center mb-4">BMW Models</h2>
+        <!-- SUVs -->
+        <section id="bmw-suv" class="mb-5">
+          <h3 class="mb-3 text-warning">BMW SUVs</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- BMW X3 -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/X3.jpeg" class="card-img-top" alt="BMW X3">
+                <div class="card-body">
+                  <h5 class="card-title">BMW X3</h5>
+                  <p class="card-text">Starting at P55,000</p>
+                  <p class="card-text">Compact luxury SUV blending comfort with versatility.</p>
+                </div>
+              </div>
+            </div>
+            <!-- BMW X5 -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/X5.jpeg" class="card-img-top" alt="BMW X5">
+                <div class="card-body">
+                  <h5 class="card-title">BMW X5</h5>
+                  <p class="card-text">Starting at P65,000</p>
+                  <p class="card-text">Luxury mid-size SUV with sporty dynamics.</p>
+                </div>
+              </div>
+            </div>
+            <!-- BMW iX -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/iX.jpeg" class="card-img-top" alt="BMW iX">
+                <div class="card-body">
+                  <h5 class="card-title">BMW iX</h5>
+                  <p class="card-text">Starting at P85,000</p>
+                  <p class="card-text">All-electric SUV delivering cutting-edge innovation and range.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sedans -->
+        <section id="bmw-sedan" class="mb-5">
+          <h3 class="mb-3 text-warning">BMW Sedans</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/3-series.jpg" class="card-img-top" alt="BMW 3 Series">
+                <div class="card-body">
+                  <h5 class="card-title">BMW 3 Series</h5>
+                  <p class="card-text">Starting at P42,000</p>
+                  <p class="card-text">Sporty and luxurious compact sedan.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/5-series.jpg" class="card-img-top" alt="BMW 5 Series">
+                <div class="card-body">
+                  <h5 class="card-title">BMW 5 Series</h5>
+                  <p class="card-text">Starting at P54,000</p>
+                  <p class="card-text">Executive sedan with advanced technology.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/7-Series.jpeg" class="card-img-top" alt="BMW 7 Series">
+                <div class="card-body">
+                  <h5 class="card-title">BMW 7 Series</h5>
+                  <p class="card-text">Starting at P87,000</p>
+                  <p class="card-text">Flagship luxury sedan with cutting-edge features.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sports -->
+        <section id="bmw-sports" class="mb-5">
+          <h3 class="mb-3 text-warning">BMW Sports</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- BMW M4 -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/m4.jpeg" class="card-img-top" alt="BMW M4">
+                <div class="card-body">
+                  <h5 class="card-title">BMW M4</h5>
+                  <p class="card-text">Starting at P75,000</p>
+                  <p class="card-text">High-performance coupe with aggressive styling.</p>
+                </div>
+              </div>
+            </div>
+            <!-- BMW M8 -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/m8.jpeg" class="card-img-top" alt="BMW M8">
+                <div class="card-body">
+                  <h5 class="card-title">BMW M8</h5>
+                  <p class="card-text">Starting at P95,000</p>
+                  <p class="card-text">Flagship luxury sports car blending power and elegance.</p>
+                </div>
+              </div>
+            </div>
+            <!-- BMW Z4 -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-bmw/Z4.jpeg" class="card-img-top" alt="BMW Z4">
+                <div class="card-body">
+                  <h5 class="card-title">BMW Z4</h5>
+                  <p class="card-text">Starting at P168,000</p>
+                  <p class="card-text">Sporty roadster offering open-top thrills and agile handling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Back to Brands Button -->
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-warning" onclick="goToBrand('index.html')">Back to Brands</button>
+        </div> <!-- Closing div for Back to Brands Button -->
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Las Dealership. All rights reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

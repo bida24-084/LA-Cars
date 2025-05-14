@@ -1,0 +1,109 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+footer, .navbar {
+  background: #0a0a0a;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hero styles */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+}
+.brand-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+.brand-card {
+  flex: 0 0 auto;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.brand-card:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+/* Brands pages style */
+.side-nav {
+  min-width: 200px;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 15px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.side-nav .btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+
+.side-nav .btn:hover {
+  background-color: #333;
+  color: #ffc107;
+}
+
+.model-card img {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.model-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+    /* Only on devices with hover capability (desktops) */
+    @media (hover: hover) and (pointer: fine) {
+      /* Open dropdown on hover */
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+      }
+    
+      /* Prevent click from toggling again (clean behavior) */
+      .dropdown > .btn[data-bs-toggle="dropdown"] {
+        pointer-events: none;
+      }
+    }
+
+
+/* Form styles */
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(15px);
+  padding: 3rem;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

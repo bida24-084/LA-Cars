@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda Models - Las Dealership</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning fw-bold fs-3" href="#">Las Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="d-flex flex-column flex-sm-row gap-2">
+          <a href="index.html" class="btn btn-outline-warning">Home</a>
+          <a href="contact.html" class="btn btn-outline-info">Contact Us</a>
+          <a href="signin.html" class="btn btn-outline-primary">Sign In</a>
+          <a href="login.html" class="btn btn-outline-success">Login</a>
+          <a href="feedback.html" class="btn btn-outline-warning">Feedback</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Side Navigation -->
+      <aside class="col-md-2">
+        <div class="side-nav">
+          <div class="dropdown brand-dropdown">
+            <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Honda
+            </button>
+            <ul class="dropdown-menu bg-dark text-white">
+              <li><a class="dropdown-item text-white" href="#honda-suv">SUVs</a></li>
+              <li><a class="dropdown-item text-white" href="#honda-sedan">Sedans</a></li>
+              <li><a class="dropdown-item text-white" href="#honda-electric">Electric</a></li>
+            </ul>
+          </div>
+      
+          <a href="mercedes.html" class="btn btn-outline-light mb-3 w-100">Mercedes</a>
+
+          <a href="toyota.html" class="btn btn-outline-light mb-3 w-100">Toyota</a>
+
+          <a href="bmw.html" class="btn btn-outline-light mb-3 w-100">BMW</a>
+      
+        </div>
+      </aside>
+      
+
+      <!-- Main Content -->
+      <main class="col-md-10">
+        <h2 class="text-center mb-4">Honda Models</h2>
+
+        <!-- SUVs Section -->
+        <section id="honda-suv" class="mb-5">
+          <h3 class="text-warning mb-3">Honda SUVs</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <!-- CR-V -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/cr-v.jpeg" class="card-img-top" alt="Honda CR-V">
+                <div class="card-body">
+                  <h5 class="card-title">Honda CR-V</h5>
+                  <p class="card-text">Starting at P35,000</p>
+                  <p class="card-text">Compact SUV with versatility and comfort.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Passport -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/passport.webp" class="card-img-top" alt="Honda Passport">
+                <div class="card-body">
+                  <h5 class="card-title">Honda Passport</h5>
+                  <p class="card-text">Starting at P38,000</p>
+                  <p class="card-text">Rugged SUV for off-road adventures.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Pilot -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/pilot.webp" class="card-img-top" alt="Honda Pilot">
+                <div class="card-body">
+                  <h5 class="card-title">Honda Pilot</h5>
+                  <p class="card-text">Starting at P45,000</p>
+                  <p class="card-text">Mid-size SUV with three rows of seating.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Sedans Section -->
+        <section id="honda-sedan" class="mb-5">
+          <h3 class="text-warning mb-3">Honda Sedans</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <!-- Civic -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/civic.jpeg" class="card-img-top" alt="Honda Civic">
+                <div class="card-body">
+                  <h5 class="card-title">Honda Civic</h5>
+                  <p class="card-text">Starting at P25,000</p>
+                  <p class="card-text">Compact sedan with sporty performance.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Accord -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/accord.jpeg" class="card-img-top" alt="Honda Accord">
+                <div class="card-body">
+                  <h5 class="card-title">Honda Accord</h5>
+                  <p class="card-text">Starting at P30,000</p>
+                  <p class="card-text">Mid-size sedan with advanced features.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Insight -->
+            <div class="col">
+              <div class="card bg-dark text-white h-100 model-card">
+                <img src="images-honda/insight.avif" class="card-img-top" alt="Honda Insight">
+                <div class="card-body">
+                  <h5 class="card-title">Honda Insight</h5>
+                  <p class="card-text">Starting at P37,000</p>
+                  <p class="card-text">Hybrid sedan with exceptional fuel economy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+        <!-- Electric Section -->
+        <section id="honda-electric" class="mb-5">
+          <h3 class="text-warning mb-3">Honda Electric & Hybrid</h3>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+              <!-- Honda e -->
+              <div class="col">
+                <div class="card bg-dark text-white h-100 model-card">
+                  <img src="images-honda/e.jpg" class="card-img-top" alt="Honda e">
+                  <div class="card-body">
+                    <h5 class="card-title">Honda e</h5>
+                    <p class="card-text">Starting at P32,000</p>
+                    <p class="card-text">Electric city car with futuristic design.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Clarity -->
+              <div class="col">
+                <div class="card bg-dark text-white h-100 model-card">
+                  <img src="images-honda/clarity.jpeg" class="card-img-top" alt="Honda Clarity">
+                  <div class="card-body">
+                    <h5 class="card-title">Honda Clarity</h5>
+                    <p class="card-text">Starting at P42,000</p>
+                    <p class="card-text">Plug-in hybrid sedan with advanced technology.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Prologue -->
+              <div class="col">
+                <div class="card bg-dark text-white h-100 model-card">
+                  <img src="images-honda/prologue.jpeg" class="card-img-top" alt="Honda Prologue">
+                  <div class="card-body">
+                    <h5 class="card-title">Honda Prologue</h5>
+                    <p class="card-text">Starting at P138,000</p>
+                    <p class="card-text">Electric SUV with advanced technology and spacious interior.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- Back to Brands Button -->
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-warning" onclick="goToBrand('index.html')">Back to Brands</button>
+        </div> <!-- Closing div for Back to Brands Button -->
+
+      </main>
+    </div> <!-- Closing div for row -->
+  </div> <!-- Closing div for container-fluid -->
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Las Dealership. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
